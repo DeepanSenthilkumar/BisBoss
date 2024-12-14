@@ -1,0 +1,7 @@
+now create sales form design.
+keep the header as same.
+in body have the shop name as in the Dashboard.
+below the shop name have a three input field with place holders "Bill,Paid,Balance".
+have a bill number(hidden for user).for first bill current device date-A001 and should increase for every bill and for 1000th bill the bill number should be current device date-B000.
+at the bottom of the screen have two buttons horizontally "Cash and Online".(consider this as a submit).
+onclick of any of the two button all the value in the input field should be reset and display all the value in the console with billnumber.

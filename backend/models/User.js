@@ -5,4 +5,10 @@ const createUser = (userID, name, shopName, email) => {
     return db.promise().execute(query, [userID, name, shopName, email]);
 };
 
-module.exports = { createUser };
+const getUserByEmail = (email) => {
+    const query = 'SELECT * FROM user WHERE email = ?';
+    return db.promise().execute(query, [email]);
+};
+
+
+module.exports = { createUser, getUserByEmail };
