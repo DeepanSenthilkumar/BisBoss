@@ -34,6 +34,11 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             </Link>
           </li>
           <li>
+            <Link to="/Mout" className="text-blue-500" onClick={toggleSidebar}>
+              MoneyOut
+            </Link>
+          </li>
+          <li>
             <button
               onClick={handleBack}
               className="text-blue-500 hover:text-blue-600"

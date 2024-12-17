@@ -24,6 +24,7 @@ import Dashboard from './component/Dashboard';
 import Sales from './component/Sales';
 import User from './component/User';
 import RealtimeView from './component/RealtimeView';
+import Moneyout from './component/Moneyout';
 
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
       <Route path="/sales" element={<Sales />} />
       <Route path="/user" element={<User />} />
       <Route path="/real" element={<RealtimeView />} />
+      <Route path="/Mout" element={<Moneyout />} />
     </Routes>
   );
 };

@@ -65,6 +65,10 @@ export default function Dashboard() {
     navigate('/real');
   };
 
+  const handleMoneyoutClick = () => {
+    navigate('/Mout');
+  };
+
   return (
     <div className="min-h-screen bg-cover bg-center relative font-poppins" style={{ backgroundImage: `url(${IMG1})` }}>
       {/* Header */}
@@ -99,16 +103,7 @@ export default function Dashboard() {
               {shopName ? shopName : 'Loading...'}
             </div>
             <div className="grid gap-4">
-              <button
-                onClick={handleRealtimeViewClick}
-                className="bg-white shadow-md rounded-lg p-6 flex items-center justify-between w-full hover:shadow-lg transition-all"
-              >
-                <div>
-                  <h3 className="font-bold text-gray-800">Realtime View</h3>
-                  <p className="text-sm text-gray-500">View real-time data</p>
-                </div>
-                <span className="bg-orange-500 text-white px-4 py-2 rounded-lg">Add</span>
-              </button>
+              
               <button
                 onClick={handleSalesClick}
                 className="bg-white shadow-md rounded-lg p-6 flex items-center justify-between w-full hover:shadow-lg transition-all"
@@ -119,6 +114,29 @@ export default function Dashboard() {
                 </div>
                 <span className="bg-orange-500 text-white px-4 py-2 rounded-lg">Add</span>
               </button>
+
+              <button
+                onClick={handleMoneyoutClick}
+                className="bg-white shadow-md rounded-lg p-6 flex items-center justify-between w-full hover:shadow-lg transition-all"
+              >
+                <div>
+                  <h3 className="font-bold text-gray-800">Moneyout</h3>
+                  <p className="text-sm text-gray-500">Records Your Expense</p>
+                </div>
+                <span className="bg-orange-500 text-white px-4 py-2 rounded-lg">Add</span>
+              </button>
+
+              <button
+                onClick={handleRealtimeViewClick}
+                className="bg-white shadow-md rounded-lg p-6 flex items-center justify-between w-full hover:shadow-lg transition-all"
+              >
+                <div>
+                  <h3 className="font-bold text-gray-800">Realtime View</h3>
+                  <p className="text-sm text-gray-500">View real-time data</p>
+                </div>
+                <span className="bg-orange-500 text-white px-4 py-2 rounded-lg">Add</span>
+              </button>
+
             </div>
           </div>
         )}
